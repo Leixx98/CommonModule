@@ -1,0 +1,93 @@
+/********************************
+Function: printf重定向到串口
+Input: 需要显示的参数
+Output: 串口输出字符
+State: 和printf同样用法，需要包含stdio.h
+********************************/
+int fputc(int ch, FILE *f)
+{
+    HAL_UART_Transmit(&huart1, (uint8_t*)&ch ,1, 0xffff);
+    
+    return ch;
+}
+
+
+/********************************
+Function: DAC904输出控制
+Input: DAC输出值
+Output: 无
+State: 直接将数值通过位带控制送入芯片
+********************************/
+void DAC_OutPut()
+{
+        int i;
+    if(key==1)
+    {
+        for(i=0;i<256;i++)
+       {
+           CLK = 1;
+           MEM_ADDR(GPIOB_ODR_Addr) = CH_value[i];    
+           CLK = 0;
+       } 
+   }
+}
+
+
+/********************************
+Function: 写一个字节到ADS1115
+Input: 需要输入的字节
+Output: 无
+State: 高位先传输，下降沿有效
+********************************/
+void ADS1115_Write_1_Byte(unsigned char DataByte)
+{
+	int i;
+
+	for(i=0;i<8;i++)
+	{
+		if(DataByte&0x80)  //if((DataByte<<i)&0x80)
+		  ADS1115_SDA_SET;       //SDA=1;
+		else
+		  ADS1115_SDA_CLR;       //SDA=0;
+        delay_us(15);
+		ADS1115_SCL_SET;         //SCL=1;
+        delay_us(15);
+        ADS1115_SCL_CLR;         //SCL=0;
+        delay_us(15);
+        DataByte <<= 1;
+	}
+    ADS1115_SDA_SET;             //SDA=1;
+    delay_us(1);
+}
+
+
+
+/********************************
+Function: 从ADS1115读一个字节
+Input: 无
+Output: 读到的一个字节
+State: 首先需要将引脚先设置为输入模式
+********************************/
+unsigned char ADS1115_Read_1_Byte(void)
+{
+    unsigned char data_Value = 0, FLAG, i;
+	
+    for(i=0;i<8;i++)
+    { 
+        
+        ADS1115_SDA_SET;         //SDA=1;
+        delay_us(15);
+        ADS1115_SCL_SET;         //SCL=1;
+        ADS1115_SDAPort_In();	 //Set SDA port as input.
+        delay_us(15);
+        FLAG=ADS1115_SDA_IN;
+        data_Value <<= 1;
+	    if(FLAG)
+            data_Value |= 0x01;
+
+        ADS1115_SCL_CLR;         //SCL=0;
+        delay_us(15);
+        ADS1115_SDAPort_Out();	 //Set SDA port as output.
+    }
+    return data_Value;
+}
