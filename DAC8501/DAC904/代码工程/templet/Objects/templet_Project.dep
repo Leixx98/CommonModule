@@ -1,0 +1,94 @@
+Dependencies for Project 'templet', Target 'Project': (DO NOT MODIFY !)
+F (.\user\blinky.c)(0x5B40E090)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\templet -c99-I.\RTE\_Project-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DTM4C1294NCPDT -DPART_TM4C1294NCPDT-o .\objects\blinky.o --omf_browse .\objects\blinky.crf --depend .\objects\blinky.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5AB10F27)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
+I (..\templet\inc/hw_gpio.h)(0x5B081C75)
+I (..\templet\inc/hw_ints.h)(0x5B081C75)
+I (..\templet\inc/hw_memmap.h)(0x5B081C75)
+I (..\templet\inc/hw_types.h)(0x5B081C76)
+I (..\templet\driverlib/debug.h)(0x5B081C6A)
+I (..\templet\driverlib/fpu.h)(0x5B081C6A)
+I (..\templet\driverlib/gpio.h)(0x5B081C6A)
+I (..\templet\driverlib/interrupt.h)(0x5B081C6A)
+I (..\templet\driverlib/pin_map.h)(0x5B081C6A)
+I (..\templet\driverlib/rom.h)(0x5B081C6A)
+I (..\templet\driverlib/rom_map.h)(0x5B081C6A)
+I (..\templet\driverlib/sysctl.h)(0x5B081C6A)
+I (..\templet\driverlib/systick.h)(0x5B081C6A)
+I (..\templet\driverlib/uart.h)(0x5B081C6A)
+I (..\templet\utils/uartstdio.h)(0x5B081C80)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
+I (..\templet\utils/buttons.h)(0x5B0D338A)
+I (..\templet\functions/dac904.h)(0x5B40DE10)
+I (..\templet\functions/usart.h)(0x5B40460E)
+F (.\user\startup_rvmdk.S)(0x5B0D30A9)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Project-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "TM4C1294NCPDT SETA 1"--list .\listings\startup_rvmdk.lst --xref -o .\objects\startup_rvmdk.o --depend .\objects\startup_rvmdk.d)
+F (.\driverlib\rvmdk\driverlib.lib)(0x5B081C6B)()
+F (.\utils\buttons.c)(0x5B0D33B5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\templet -c99-I.\RTE\_Project-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DTM4C1294NCPDT -DPART_TM4C1294NCPDT-o .\objects\buttons.o --omf_browse .\objects\buttons.crf --depend .\objects\buttons.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5AB10F27)
+I (..\templet\inc/hw_types.h)(0x5B081C76)
+I (..\templet\inc/hw_memmap.h)(0x5B081C75)
+I (..\templet\inc/hw_gpio.h)(0x5B081C75)
+I (..\templet\driverlib/sysctl.h)(0x5B081C6A)
+I (..\templet\driverlib/rom.h)(0x5B081C6A)
+I (..\templet\driverlib/rom_map.h)(0x5B081C6A)
+I (..\templet\driverlib/pin_map.h)(0x5B081C6A)
+I (..\templet\driverlib/gpio.h)(0x5B081C6A)
+I (..\templet\utils/buttons.h)(0x5B0D338A)
+F (.\utils\uartstdio.c)(0x5B081C80)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\templet -c99-I.\RTE\_Project-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DTM4C1294NCPDT -DPART_TM4C1294NCPDT-o .\objects\uartstdio.o --omf_browse .\objects\uartstdio.crf --depend .\objects\uartstdio.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5AB10F27)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
+I (..\templet\inc/hw_ints.h)(0x5B081C75)
+I (..\templet\inc/hw_memmap.h)(0x5B081C75)
+I (..\templet\inc/hw_types.h)(0x5B081C76)
+I (..\templet\inc/hw_uart.h)(0x5B081C76)
+I (..\templet\driverlib/debug.h)(0x5B081C6A)
+I (..\templet\driverlib/interrupt.h)(0x5B081C6A)
+I (..\templet\driverlib/rom.h)(0x5B081C6A)
+I (..\templet\driverlib/rom_map.h)(0x5B081C6A)
+I (..\templet\driverlib/sysctl.h)(0x5B081C6A)
+I (..\templet\driverlib/uart.h)(0x5B081C6A)
+I (..\templet\utils/uartstdio.h)(0x5B081C80)
+F (.\functions\dac904.c)(0x5B40E2F6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\templet -c99-I.\RTE\_Project-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DTM4C1294NCPDT -DPART_TM4C1294NCPDT-o .\objects\dac904.o --omf_browse .\objects\dac904.crf --depend .\objects\dac904.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5AB10F27)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
+I (..\templet\inc/hw_gpio.h)(0x5B081C75)
+I (..\templet\inc/hw_ints.h)(0x5B081C75)
+I (..\templet\inc/hw_memmap.h)(0x5B081C75)
+I (..\templet\inc/hw_types.h)(0x5B081C76)
+I (..\templet\driverlib/debug.h)(0x5B081C6A)
+I (..\templet\driverlib/fpu.h)(0x5B081C6A)
+I (..\templet\driverlib/gpio.h)(0x5B081C6A)
+I (..\templet\driverlib/interrupt.h)(0x5B081C6A)
+I (..\templet\driverlib/pin_map.h)(0x5B081C6A)
+I (..\templet\driverlib/rom.h)(0x5B081C6A)
+I (..\templet\driverlib/rom_map.h)(0x5B081C6A)
+I (..\templet\driverlib/sysctl.h)(0x5B081C6A)
+I (..\templet\driverlib/systick.h)(0x5B081C6A)
+I (..\templet\driverlib/uart.h)(0x5B081C6A)
+I (..\templet\utils/uartstdio.h)(0x5B081C80)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
+I (..\templet\utils/buttons.h)(0x5B0D338A)
+I (..\templet\functions/dac904.h)(0x5B40DE10)
+I (..\templet\functions/usart.h)(0x5B40460E)
+F (.\functions\usart.c)(0x5B404708)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\templet -c99-I.\RTE\_Project-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DTM4C1294NCPDT -DPART_TM4C1294NCPDT-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5AB10F27)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588B8344)
+I (..\templet\inc/hw_gpio.h)(0x5B081C75)
+I (..\templet\inc/hw_ints.h)(0x5B081C75)
+I (..\templet\inc/hw_memmap.h)(0x5B081C75)
+I (..\templet\inc/hw_types.h)(0x5B081C76)
+I (..\templet\driverlib/debug.h)(0x5B081C6A)
+I (..\templet\driverlib/fpu.h)(0x5B081C6A)
+I (..\templet\driverlib/gpio.h)(0x5B081C6A)
+I (..\templet\driverlib/interrupt.h)(0x5B081C6A)
+I (..\templet\driverlib/pin_map.h)(0x5B081C6A)
+I (..\templet\driverlib/rom.h)(0x5B081C6A)
+I (..\templet\driverlib/rom_map.h)(0x5B081C6A)
+I (..\templet\driverlib/sysctl.h)(0x5B081C6A)
+I (..\templet\driverlib/systick.h)(0x5B081C6A)
+I (..\templet\driverlib/uart.h)(0x5B081C6A)
+I (..\templet\utils/uartstdio.h)(0x5B081C80)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x588B8344)
+I (..\templet\functions/usart.h)(0x5B40460E)

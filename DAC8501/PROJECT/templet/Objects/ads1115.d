@@ -1,0 +1,12 @@
+.\objects\ads1115.o: functions\ads1115.c
+.\objects\ads1115.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\ads1115.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ads1115.o: ..\templet\inc/hw_types.h
+.\objects\ads1115.o: ..\templet\inc/hw_memmap.h
+.\objects\ads1115.o: ..\templet\inc/hw_gpio.h
+.\objects\ads1115.o: ..\templet\driverlib/sysctl.h
+.\objects\ads1115.o: ..\templet\driverlib/rom.h
+.\objects\ads1115.o: ..\templet\driverlib/pin_map.h
+.\objects\ads1115.o: ..\templet\driverlib/gpio.h
+.\objects\ads1115.o: ..\templet\utils/buttons.h
+.\objects\ads1115.o: ..\templet\functions/ads1115.h
